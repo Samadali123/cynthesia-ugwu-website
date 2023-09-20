@@ -1,3 +1,5 @@
+/* The CSS code provided is a stylesheet that defines the styles for a web page. Here is a breakdown of
+what each section does: */
 *{
     margin: 0;
     padding: 0;
@@ -63,10 +65,9 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 35px 35px;
+    padding: 2vw 3vw;
     position: fixed;
     z-index: 1000;
-
 
   }
 
@@ -78,14 +79,14 @@ html,body{
   #nav a {
     text-decoration: none;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.5vmax;
     text-transform: capitalize;
     font-weight: 500;
   }
 
   #nav h3 {
     text-transform: uppercase;
-    font-size: 1vw;
+    font-size: 1vmax;
   }
 
 
@@ -102,12 +103,9 @@ html,body{
 
 
   #home #heading  {
-    margin-top:100px;
+    margin-top:120px;
   }
-  #heading {
-    margin-top: 75px;
-  }
-
+ 
 #heading h1 {
     font-size: 10vw;
     font-family: regular;
@@ -115,13 +113,12 @@ html,body{
     font-weight: 600;
     line-height: 1;
     opacity: .7;
-    margin-left: 40px;
-
+    margin-left: 3vw;
 }
 
 
 #heading #secondh1{
-    margin-left: 200px;
+    margin-left: 17vw;
 }
 
 #heading .blocktext {
@@ -129,16 +126,16 @@ html,body{
     /* background-color: rebeccapurple; */
     display: flex;
     flex-direction: column;
-    gap: 130px;
+    gap: 2vw;
     align-items: end;
 
 }
 
 .blocktext h5{
-    text-align: ;
+    text-align: center;
     font-family: regular;
     text-transform: uppercase;
-    font-size: 1.1vw;
+    font-size: 1.5vmax;
 }
 
 
@@ -152,11 +149,13 @@ html,body{
 .bounding h4 {
     font-family: regular;
     color: white;
-    font-size: 1vw;
-    margin-bottom: 10px;
+    font-size: 1.5vmax;
+    margin-bottom: 1vmax;
     text-transform: uppercase;
     position: relative;
-    top: 10px;
+    /* top: 10px; */
+    /* transform: translateY(100%); */
+    opacity: 0;
 
 }
 
@@ -166,16 +165,14 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:  0px  45px;
-    padding-right: 60px;
-    position: absolute;
-    bottom: 16%;
+    padding: 2vw 4vw;
+    margin-top: 3vw;
 }
 
 #footerheading h3 {
     font-family: regular;
     text-transform: uppercase;
-    font-size: 1vw;
+    font-size: 1.5vmax;
 
 }
 
@@ -183,12 +180,11 @@ html,body{
     display: flex;
     align-items: center;
     gap: 10px;
-    
 }
 
 #icons .icon {
-    width: 2vw;
-    height: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
     background-color: white;
     border-radius: 50%;
    color: black;
@@ -206,9 +202,8 @@ html,body{
     min-height: 100vh;
     background-color: #000000;
     position: relative;
-    padding-top: 200px;
-    padding-left: 40px;
-    padding-right: 120px;
+    padding: 0 4vw;
+    padding-top: 5vw;
 }
 
 #page2 .elem{
@@ -220,6 +215,7 @@ html,body{
     padding: 3vw 0vw;
     border-top: 1px solid #888;
     position: relative;
+    overflow: hidden;
 }
 
 #page2 .elem h2 {
@@ -241,6 +237,7 @@ html,body{
 
 }
 
+
 .elem img {
     position: absolute;
     z-index: 999;
@@ -249,7 +246,7 @@ html,body{
 }
 #page3{
     width: 100%;
-  height: 130vh;
+  min-height: 130vh;
     position: relative;
     background-color: #000000;
     
@@ -330,6 +327,7 @@ html,body{
     justify-content: space-between;
     padding: 2vw 2.4vw;
     transition: all cubic-bezier(0.19, 1 , 0.22 , 1) 1s;
+    opacity: 0;
 }
 
 #page3 #about-footer #part1{
@@ -344,7 +342,6 @@ html,body{
     font-family: regular;
     text-transform: uppercase;
     font-weight: bold;
-
 }
 
 #page3 #about-footer #part2 {
@@ -359,3 +356,176 @@ html,body{
     text-transform: uppercase;
     font-size: 1vw;
 }
+
+
+@media (max-width: 600px) {
+
+    #nav{
+        padding: 2vw 6vw;
+      }
+    
+      #nav {
+        font-family: regular;
+    
+      }
+    
+      #nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 2.2vw;
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+    
+      #nav h3 {
+        text-transform: uppercase;
+        font-size: 2vw
+      }
+
+
+      #home #heading  {
+        margin-top:150px;
+      }
+     
+    #heading h1 {
+        margin-left: 6vw;
+    }
+
+    #heading .blocktext {
+        gap: 17vw;
+    }
+    
+    .blocktext h5{
+        font-size: 3vw;
+    }
+    
+    
+    #iconsheading {
+        padding-right: 4vw;
+    }
+    
+    .bounding h4 {
+        font-family: regular;
+        color: white;
+        font-size: 2vw;
+        margin-bottom: 2vw;
+        text-transform: uppercase;
+        position: relative;
+        /* top: 10px; */
+        /* transform: translateY(100%); */
+        opacity: 0;
+    
+    }
+
+
+     
+    #footerheading {
+        margin-top: 30vw;
+        padding: 0 6vw;
+    }
+
+
+    #page2{
+        width: 100%;
+        min-height: 50vh;
+        background-color: #000000;
+        /* background-color: rebeccapurple; */
+        position: relative;
+        padding: 0 6vw;  
+    }
+
+    .elem{
+        overflow: hidden;
+    }
+    .elem h2{
+        font-size: 3,5vw;
+        /* color: red; */
+    }
+
+    .elem h5{
+        font-size: 3vw;
+    }
+
+    #page3 {
+       height: 60vh;
+       /* background-color: red; */
+       padding: 0;
+       /* padding-bottom: 5vw; */
+    }
+
+    #page3 #top{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        gap: 13vw;
+        /* text-align: center; */
+        padding-right: 15vw;
+    }
+    
+    #page3 img{
+         width: 16vw;
+    }
+    
+   
+    #page3 #top h3{
+        font-size: 5vw;
+        opacity: 0.8;
+    }
+
+    #page3 #top p {
+        margin-top: 1.5vw;
+        font-size: 2vw;
+    }
+
+    #page3 #top #text-about button{
+        padding: 1.2vw 2.2vw;
+        font-size: 2vw;
+    }
+
+    #page3 #big-heading {
+        display: none;
+    }
+
+
+    #page3 #about-footer {
+        width: 100vw;
+        position: relative;
+          top: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding: 4vw 5vw;
+        transition: all cubic-bezier(0.19, 1 , 0.22 , 1) 1s;
+        opacity: 1;
+    }
+    
+    #page3 #about-footer #part1{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    
+    #page3 #about-footer #part1  p {
+        font-size: 2vw;
+        font-family: regular;
+        text-transform: uppercase;
+        font-weight: bold;
+    
+    }
+    
+    #page3 #about-footer #part2 {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    #page3 #about-footer #part2 h3 
+    {
+        font-family: regular;
+        text-transform: uppercase;
+        font-size: 1.5vw;
+    }
+}
+

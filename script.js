@@ -1,3 +1,9 @@
+/**
+ * The above code is a JavaScript function that uses the Locomotive Scroll library to create smooth
+ * scrolling effects and animations on a webpage. It also includes mouse movement interactions, such as
+ * skewing elements and rotating images based on the mouse position.
+ * @returns The code provided does not have a return statement, so it does not return anything.
+ */
 function locomotive(){
     gsap.registerPlugin(ScrollTrigger);
 
@@ -177,11 +183,11 @@ tl2.from("#page3 #top img", {
 
 
 
-.from("#about-footer" , 
+.to("#about-footer" , 
 {
-  opacity:0,
+  opacity:1,
   duration:0.5,
-  y:30,
+  y:-20,
 
   scrollTrigger:{
     trigger:"#big-heading",
